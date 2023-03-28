@@ -5,121 +5,166 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sagar R B</title>
-    <style>
-        .nav-item{
-            display: inline;
-            margin: 50px 10px ;
-        }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header style="background: #ccffcc; height: 50px; padding-top: 8px;">
+    <header>
         <div>
-            <nav>
-                <ul>
-                    <li class="nav-item"> <a href="#home" style="text-decoration: none; color: black;"> Home</a></li>
-                    <li class="nav-item"> <a href="#about" style="text-decoration: none; color: black;"> About</a></li>
-                    <li class="nav-item"> <a href="#projects" style="text-decoration: none; color: black;"> Projects</a></li>
-                    <li class="nav-item"> <a href="#contact" style="text-decoration: none; color: black;"> Contact</a></li>
-                </ul>
-            </nav>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Sagar R B</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#about">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#projects">Projects</a>
+                       </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
         </div>
     </header>
 
     <section id="home">
-        <div>
-            <div style="display: inline-block;">
-                <p>Hi I'm <b>Sagar R B</b> <br>  Software Engineer</p>
-            </div>
 
-            <div style="display: inline-block;">
-                <img src="photo.jpg" alt="" width="250px" height="250px">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 head-title">
+                    <h4>Hello, I am </h4><span class="head-name"><b><h1>Sagar R B</h1></b></span> <br> <h4>Software Engineer</h4>
+                    <button class="btn btn-primary">Print Resume</button>
+                </div>
+                <div class="col-md-6 head-img">
+                    <img src="photo.jpg" alt="" width="250px" height="250px">
+                </div>
             </div>
         </div>
     </section>
 
     <section id="about">
-        <div>
-            <div>
-                <h3>Who am I?</h3>
-                <h5>is simply dummy text of the printing and typesetting industry</h5>
-                <p>is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever 
-                    since the 1500s, when an unknown printer took a galley of type 
-                    and scrambled it to make a type specimen book. It has survived not</p>
-            </div>
-            <div>
-                <h3>Personal Info</h3>
-                <p>DOB: </p>
-                <p>Email: </p>
-                <p>Phone: </p>
-                <p>Location: </p>
-            </div>
-            <div>
-                <h3>My Expertise</h3>
-                <ul>
-                    <li>Web Development</li>
-                    <li>Digital Marketing</li>
-                </ul>
+        <div class="container about-div">
+            <div class="row">
+                <div class="col-md-4 about-sec">
+                    <h3>Who am I?</h3>
+                    <h5>is simply dummy text of the printing and typesetting industry</h5>
+                    <p>is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever 
+                        since the 1500s, when an unknown printer took a galley of type 
+                        and scrambled it to make a type specimen book. It has survived not</p>
+                </div>
+                <div class="col-md-4 about-sec">
+                    <h3>Personal Info</h3>
+                    <p>DOB: </p>
+                    <p>Email: </p>
+                    <p>Phone: </p>
+                    <p>Location: </p>
+                </div>
+                <div class="col-md-4 about-sec">
+                    <h3>My Expertise</h3>
+                    <p>Web Development</p>
+                    <p>Digital Marketing</p>
+                </div>
             </div>
         </div>
     </section>
     <section id="projects">
-        <div>
-            <h3>Projects</h3>
-            <div>
-                <h4>Home Automation Using Hand Gestures</h4>
-                <p>
-                    Contrary to popular belief, Lorem Ipsum is not simply random text. 
-                    It has roots in a piece of classical Latin literature from 45 BC, 
-                    making it over 2000 years old. Richard McClintock, a Latin professor 
-                    at Hampden-Sydney College in Virginia, looked up one of the more obscure 
-                    Latin words, consectetur, from a Lorem Ipsum passage, and going through 
-                    the cites of the word in classical literature, discovered the undoubtable 
-                    source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of
-                </p>     
-            </div>
-            <div>
-                <h4>Shopping Cart</h4>
-                <p>
-                    Contrary to popular belief, Lorem Ipsum is not simply random text. 
-                    It has roots in a piece of classical Latin literature from 45 BC, 
-                    making it over 2000 years old. Richard McClintock, a Latin professor 
-                    at Hampden-Sydney College in Virginia, looked up one of the more obscure 
-                    Latin words, consectetur, from a Lorem Ipsum passage, and going through 
-                    the cites of the word in classical literature, discovered the undoubtable 
-                    source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of
-                </p>     
-            </div>
-            <div>
-                <h4>ToDo Application</h4>
-                <p>
-                    Contrary to popular belief, Lorem Ipsum is not simply random text. 
-                    It has roots in a piece of classical Latin literature from 45 BC, 
-                    making it over 2000 years old. Richard McClintock, a Latin professor 
-                    at Hampden-Sydney College in Virginia, looked up one of the more obscure 
-                    Latin words, consectetur, from a Lorem Ipsum passage, and going through 
-                    the cites of the word in classical literature, discovered the undoubtable 
-                    source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of
-                </p>     
+        <div class="container about-div">
+            <div class="row">
+                <h3>Projects</h3>
+                <br>
+                <div class="card col-md-3 about-sec" style="margin: auto;">
+                    <div class="card-body">
+                      <h5 class="card-title">Home Automation Using Hand Gestures</h5>
+                      
+                      <p class="card-text">Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                        It has roots in a piece of classical Latin literature from 45 BC, 
+                        making it over 2000 years old. Richard McClintock, a Latin professor 
+                        </p>
+                      <a href="#" class="card-link">Source Code</a>
+                    </div>
+                  </div>
+                  <div class="card col-md-3 about-sec" style="margin: auto;">
+                    <div class="card-body">
+                      <h5 class="card-title">Shopping Cart</h5>
+                      
+                      <p class="card-text">Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                        It has roots in a piece of classical Latin literature from 45 BC, 
+                        making it over 2000 years old. Richard McClintock, a Latin professor 
+                        </p>
+                      <a href="#" class="card-link">Source Code</a>
+                    </div>
+                  </div>
+                  <div class="card col-md-3 about-sec" style="margin: auto;">
+                    <div class="card-body">
+                      <h5 class="card-title">ToDo Application</h5>
+                      
+                      <p class="card-text">Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                        It has roots in a piece of classical Latin literature from 45 BC, 
+                        making it over 2000 years old. Richard McClintock, a Latin professor 
+                        </p>
+                      <a href="#" class="card-link">Source Code</a>
+                    </div>
+                  </div>
             </div>
         </div>
     </section>
     <section id="contact">
-        <h3>Contact me</h3>
-        <form action="">
-            <input type="text" placeholder="Name*"><br><br>
-            <input type="email" placeholder="Email*"><br><br>
-            <textarea name="" id="" cols="20" rows="5" placeholder="Message*"></textarea><br><br>
-            <input type="submit">
-        </form>
+
+        <div class="container">
+            <div class="row">
+                <h3>Contact me</h3>
+                <div class="mb-3">
+                    
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name*">
+                    
+                  </div>
+                  <div class="mb-3">
+                    
+                    
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email*">
+                  </div>
+                  <div class="mb-3">
+                    
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message*"></textarea>
+                    
+                  </div>
+                  <div class="mb-3">
+                    
+                    
+                    <input type="submit" class="form-control btn btn-primary" id="exampleFormControlInput1" value="Send Message">
+                  </div>
+            </div>
+        </div>
 
     </section>
 
     <footer>
-        <div>
-           <p> &#169; 2023 Sagar R B</p>
+        <div class="footer">
+            <p> &#169; 2023 Sagar R B</p>
+            <p><i class="fa-brands fa-github icons"></i> 
+                 <i class="fa-brands fa-linkedin icons"></i>
+                 <i class="fa-brands fa-instagram icons"></i>
+                 <i class="fa-brands fa-skype icons"></i>
+                </p>
+          
         </div>
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,35 @@
+
+.header{
+    background: ghostwhite;
+}
+.head-title{
+    text-align: center;
+    padding-top: 80px;
+}
+.head-name{
+    font-weight: bold;
+    font-size: large;
+}
+.head-img{
+    text-align: center;
+    padding-top: 80px;
+}
+
+.about-div{
+    padding-top: 25px;
+}
+.about-sec{
+    text-align: center;
+}
+
+.icons{
+    margin: 0 10px 0 10px;
+}
+.footer{
+    margin-top: 10px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
